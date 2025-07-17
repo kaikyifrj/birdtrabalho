@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #btn-restart {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        #btn-restart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <button id="btn-restart" onclick="resetGame()">Reiniciar</button>
+
+    <script src="canvas.js"></script>
+    <script src="scoreboard.js"></script>
+    <script src="sky.js"></script>
+    <script src="ground.js"></script>
+    <script src="bird.js"></script>
+    <script src="pipe.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
